@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout17">
+        <TextView
+            p1:text="Title"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/title_bar"
+            p1:textColor="#ffffffff"
+            p1:background="#ff080303" />
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout1">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/imageView1" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/linearLayout2">
+                <LinearLayout
+                    p1:orientation="horizontal"
+                    p1:minWidth="25px"
+                    p1:minHeight="25px"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/linearLayout3">
+                    <LinearLayout
+                        p1:orientation="horizontal"
+                        p1:minWidth="25px"
+                        p1:minHeight="25px"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="match_parent"
+                        p1:id="@+id/linearLayout4">
+                        <ImageView
+                            p1:src="@android:drawable/ic_menu_gallery"
+                            p1:id="@+id/imageView2"
+                            p1:layout_width="28dp"
+                            p1:layout_height="28dp" />
+                        <TextView
+                            p1:text="Medium Text"
+                            p1:textAppearance="?android:attr/textAppearanceMedium"
+                            p1:id="@+id/textView2"
+                            p1:layout_width="wrap_content"
+                            p1:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        p1:orientation="horizontal"
+                        p1:minWidth="25px"
+                        p1:minHeight="25px"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="match_parent"
+                        p1:id="@+id/linearLayout5"
+                        p1:layout_marginLeft="40dp">
+                        <ImageView
+                            p1:src="@android:drawable/ic_menu_gallery"
+                            p1:layout_width="28dp"
+                            p1:layout_height="28dp"
+                            p1:id="@+id/imageView3" />
+                        <TextView
+                            p1:text="Medium Text"
+                            p1:textAppearance="?android:attr/textAppearanceMedium"
+                            p1:layout_width="wrap_content"
+                            p1:layout_height="match_parent"
+                            p1:id="@+id/textView3" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="horizontal"
+                    p1:minWidth="25px"
+                    p1:minHeight="25px"
+                    p1:id="@+id/linearLayout6"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content">
+                    <TextView
+                        p1:text="of critics liked it"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="match_parent"
+                        p1:id="@+id/textView4" />
+                    <TextView
+                        p1:text="of users liked it"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="match_parent"
+                        p1:id="@+id/textView5"
+                        p1:layout_marginLeft="10dp" />
+                </LinearLayout>
+                <TextView
+                    p1:text="Small Text"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/textView6" />
+                <TextView
+                    p1:text="Small Text"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/textView7" />
+                <TextView
+                    p1:text="Small Text"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/textView8" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            p1:text="Movie Info"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/movie_info"
+            p1:textColor="#ffffffff"
+            p1:background="#ff0c0303" />
+        <TextView
+            p1:text="Synopsis"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/synopsis" />
+        <TextView
+            p1:text="Director"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/director" />
+        <TextView
+            p1:text="mpaa Rating"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/mpaa_rating" />
+        <TextView
+            p1:text="Running time"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/runtime" />
+        <TextView
+            p1:text="Genre"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/genre" />
+        <TextView
+            p1:text="Release Date"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/release_date" />
+        <TextView
+            p1:text="Cast"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/cast_label"
+            p1:textColor="#ffffffff"
+            p1:background="#ff070404" />
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout7"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 1"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor1" />
+            <TextView
+                p1:text="Characters 1"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters1" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout8"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 2"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor2" />
+            <TextView
+                p1:text="Characters 2"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters2" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout9"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 3"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor3" />
+            <TextView
+                p1:text="Characters 3"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters3" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout10"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 4"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor4" />
+            <TextView
+                p1:text="Characters 4"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters4" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout11"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 5"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor5" />
+            <TextView
+                p1:text="Characters 5"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters5" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout12"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 6"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor6" />
+            <TextView
+                p1:text="Characters 6"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters6" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout13"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 7"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor7" />
+            <TextView
+                p1:text="Characters 7"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters7" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout14"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 8"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor8" />
+            <TextView
+                p1:text="Characters 8"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters8" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout15"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 9"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor9" />
+            <TextView
+                p1:text="Characters 9"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters9" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout16"
+            p1:layout_marginBottom="5dp">
+            <TextView
+                p1:text="Actor 10"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/actor10" />
+            <TextView
+                p1:text="Characters 10"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/characters10" />
+        </LinearLayout>
+        <TextView
+            p1:text="Reviews"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/reviews"
+            p1:textColor="#ffffffff"
+            p1:background="#ff0a0505" />
+        <TextView
+            p1:text="Consensus"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/consensus" />
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout18"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon1" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout28">
+                <TextView
+                    p1:text="Reviewer1"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/reviewer1" />
+                <TextView
+                    p1:text="Review1"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/review1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout19"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon2" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout28">
+                <TextView
+                    p1:text="Reviewer2"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/reviewer2" />
+                <TextView
+                    p1:text="Review2"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/review2" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout20"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon3" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout28">
+                <TextView
+                    p1:text="Reviewer3"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/reviewer3" />
+                <TextView
+                    p1:text="Review3"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/review3" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout21"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:id="@+id/icon4"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout31">
+                <TextView
+                    p1:text="Reviewer4"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/reviewer4"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+                <TextView
+                    p1:text="Review4"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/review4"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout22"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon5" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout31">
+                <TextView
+                    p1:text="Reviewer5"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/reviewer5"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+                <TextView
+                    p1:text="Review5"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/review5"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout23"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon6" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout31">
+                <TextView
+                    p1:text="Reviewer6"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/reviewer6"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+                <TextView
+                    p1:text="Review6"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/review6"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout24"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon7" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout31">
+                <TextView
+                    p1:text="Reviewer7"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/reviewer7"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+                <TextView
+                    p1:text="Review7"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/review7"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout25"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon8" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout31">
+                <TextView
+                    p1:text="Reviewer8"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/reviewer8"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+                <TextView
+                    p1:text="Review8"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/review8"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout26"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon9" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout31">
+                <TextView
+                    p1:text="Reviewer9"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/reviewer9"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+                <TextView
+                    p1:text="Review9"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/review9"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout27"
+            p1:layout_marginBottom="10dp">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="28dp"
+                p1:layout_height="28dp"
+                p1:id="@+id/icon10" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="35dp"
+                p1:id="@+id/linearLayout31">
+                <TextView
+                    p1:text="Reviewer10"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/reviewer10"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+                <TextView
+                    p1:text="Review10"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/review10"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
