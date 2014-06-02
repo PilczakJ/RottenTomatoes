@@ -10,7 +10,7 @@ $ cucumber
 			Then I press list item number 1
 			Then I wait for the MoviePage screen to appear
 			Then I see the "textView2"
-			Then I should see view with tag "fresh"
+			Then the view with id "imageView2"'s tag property should equal "fresh"
 			
 		Scenario: top box office movie is rotten
 			Given I am on the Index Page
@@ -20,5 +20,5 @@ $ cucumber
 			Then I press list item number 1
 			Then I wait for the MoviePage screen to appear
 			Then I see the "textView2"
-			Then I should see view with tag "rotten"
+			Then the view with id "imageView2"'s tag property should equal "rotten"
 			
