@@ -1,13 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RottenTomatoes\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RottenTomatoes\MoviePage.cs">
     <Files>
-      <File FileName="RottenTomatoes\MainActivity.cs" Line="313" Column="4" />
+      <File FileName="RottenTomatoes\MainActivity.cs" Line="227" Column="70" />
+      <File FileName="RottenTomatoes\MoviePage.cs" Line="266" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.RottenTomatoes MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" MonoForAntroid.PreferredTheme="Theme.Holo.Light" AndroidDeviceId-Debug="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.RottenTomatoes MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" MonoForAntroid.PreferredTheme="Theme.Light" AndroidDeviceId-Debug="emulator-5554" />
 </Properties>

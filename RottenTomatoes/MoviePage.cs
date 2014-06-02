@@ -74,9 +74,11 @@ namespace RottenTomatoes
 			string critic_consensus = Intent.GetStringExtra ("critic_consensus") ?? "Data not available";
 			List<FullCast> cast = getFullCast("http://api.rottentomatoes.com/api/public/v1.0/movies/"+id+"/cast.json?apikey=p72922sy9n3a7e6ke8syyukx");
 
+			//set title
 			TextView titlebar = FindViewById (Resource.Id.title_bar) as TextView;
 			titlebar.Text = title;
 
+			//set reviewer/audience scores/icons
 			ImageView reviewer_icon = FindViewById (Resource.Id.imageView2) as ImageView;
 			if (critic_score >= 60) {
 				reviewer_icon.SetImageResource (Resource.Drawable.fresh);
@@ -94,29 +96,38 @@ namespace RottenTomatoes
 			criticScore.Text = critic_score + "%";
 			audienceScore.Text = audience_score + "%";
 
+
+			//set first two actors
 			TextView first_two_actors = FindViewById (Resource.Id.textView6) as TextView;
 			first_two_actors.Text = cast [0].name + ", " + cast [1].name;
 
+			//set release date
 			TextView release_date = FindViewById (Resource.Id.textView7) as TextView;
 			release_date.Text = "In theaters " + release_month + "/" + release_day + "/" + release_year;
 
+			//runtime
 			int hours = runtime / 60;
 			int minutes = runtime - (hours * 60);
 			TextView ratingRuntime = FindViewById (Resource.Id.textView8) as TextView;
 			ratingRuntime.Text = mpaa_rating + ", " + hours + " hr. " + minutes + " min.";
 
+			//synopsis
 			TextView synopsisText = FindViewById (Resource.Id.synopsis) as TextView;
 			synopsisText.Text = "Synopsis: " + synopsis;
 
+			//director
 			TextView directorText = FindViewById (Resource.Id.director) as TextView;
 			directorText.Text = "Director: " + director;
 
+			//mpaa rating
 			TextView mpaaText = FindViewById (Resource.Id.mpaa_rating) as TextView;
 			mpaaText.Text = "Rated: " + mpaa_rating;
 
+			//runtime (movie info)
 			TextView runTime = FindViewById (Resource.Id.runtime) as TextView;
 			runTime.Text = "Running Time: " + hours + " hr. " + minutes + " min.";
 
+			//genre
 			TextView genreText = FindViewById (Resource.Id.genre) as TextView;
 			genreText.Text = "Genre: ";
 
@@ -127,18 +138,16 @@ namespace RottenTomatoes
 			else
 				genreText.Text += genres [0];
 
+			//thumbnail
 			Bitmap img = GetImageBitmapFromUrl (thumbnail);
 			ImageView thumbnailPic = FindViewById (Resource.Id.imageView1) as ImageView;
 			thumbnailPic.SetImageBitmap (img);
 				
-
-
-			//gotta get it from specific movie json
-
+			//theater release
 			TextView theaterRelease = FindViewById (Resource.Id.release_date) as TextView;
 			theaterRelease.Text = "Theater Release: " + release_month + "/" + release_day + "/" + release_year;
 
-
+			//actor list
 			TextView actor1 = FindViewById (Resource.Id.actor1) as TextView;
 			actor1.Text = cast [0].name;
 
@@ -238,10 +247,12 @@ namespace RottenTomatoes
 					characters10.Text += (cast [9].characters [i] + ", ");
 					
 
-
+			//critic consensus
 			TextView criticConsensus = FindViewById (Resource.Id.consensus) as TextView;
 			criticConsensus.Text = "Consensus: " + critic_consensus;
-			/*
+
+			//make each review (freshness, critic, quote, and make link to the full review)
+
 			List<Review> reviews = getReviews ("http://api.rottentomatoes.com/api/public/v1.0/movies/" + id + "/reviews.json?review_type=top_critic&page_limit=20&page=1&country=us&apikey=p72922sy9n3a7e6ke8syyukx");
 
 			ImageView freshness1 = FindViewById (Resource.Id.icon1) as ImageView;
@@ -249,63 +260,153 @@ namespace RottenTomatoes
 				freshness1.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness1.SetImageResource (Resource.Drawable.rotten);
+			TextView critic1 = FindViewById (Resource.Id.reviewer1) as TextView;
+			TextView review1 = FindViewById (Resource.Id.review1) as TextView;
+			critic1.Text = reviews [0].name;
+			review1.Text = reviews [0].quote;
+			review1.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[0].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness2 = FindViewById (Resource.Id.icon2) as ImageView;
 			if (reviews [1].freshness == "fresh")
 				freshness2.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness2.SetImageResource (Resource.Drawable.rotten);
+			TextView critic2 = FindViewById (Resource.Id.reviewer2) as TextView;
+			TextView review2 = FindViewById (Resource.Id.review2) as TextView;
+			critic2.Text = reviews [1].name;
+			review2.Text = reviews [1].quote;
+			review2.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[1].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness3 = FindViewById (Resource.Id.icon3) as ImageView;
 			if (reviews [2].freshness == "fresh")
 				freshness3.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness3.SetImageResource (Resource.Drawable.rotten);
+			TextView critic3 = FindViewById (Resource.Id.reviewer3) as TextView;
+			TextView review3 = FindViewById (Resource.Id.review3) as TextView;
+			critic3.Text = reviews [2].name;
+			review3.Text = reviews [2].quote;
+			review3.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[2].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness4 = FindViewById (Resource.Id.icon4) as ImageView;
 			if (reviews [3].freshness == "fresh")
 				freshness4.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness4.SetImageResource (Resource.Drawable.rotten);
+			TextView critic4 = FindViewById (Resource.Id.reviewer4) as TextView;
+			TextView review4 = FindViewById (Resource.Id.review4) as TextView;
+			critic4.Text = reviews [3].name;
+			review4.Text = reviews [3].quote;
+			review4.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[3].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness5 = FindViewById (Resource.Id.icon5) as ImageView;
 			if (reviews [4].freshness == "fresh")
 				freshness5.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness5.SetImageResource (Resource.Drawable.rotten);
+			TextView critic5 = FindViewById (Resource.Id.reviewer5) as TextView;
+			TextView review5 = FindViewById (Resource.Id.review5) as TextView;
+			critic5.Text = reviews [4].name;
+			review5.Text = reviews [4].quote;
+			review5.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[4].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness6 = FindViewById (Resource.Id.icon6) as ImageView;
 			if (reviews [5].freshness == "fresh")
 				freshness6.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness6.SetImageResource (Resource.Drawable.rotten);
+			TextView critic6 = FindViewById (Resource.Id.reviewer6) as TextView;
+			TextView review6 = FindViewById (Resource.Id.review6) as TextView;
+			critic6.Text = reviews [5].name;
+			review6.Text = reviews [5].quote;
+			review6.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[7].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness7 = FindViewById (Resource.Id.icon7) as ImageView;
 			if (reviews [6].freshness == "fresh")
 				freshness7.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness7.SetImageResource (Resource.Drawable.rotten);
+			TextView critic7 = FindViewById (Resource.Id.reviewer7) as TextView;
+			TextView review7 = FindViewById (Resource.Id.review7) as TextView;
+			critic7.Text = reviews [6].name;
+			review7.Text = reviews [6].quote;
+			review7.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[6].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness8 = FindViewById (Resource.Id.icon8) as ImageView;
 			if (reviews [7].freshness == "fresh")
 				freshness8.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness8.SetImageResource (Resource.Drawable.rotten);
+			TextView critic8 = FindViewById (Resource.Id.reviewer8) as TextView;
+			TextView review8 = FindViewById (Resource.Id.review8) as TextView;
+			critic8.Text = reviews [7].name;
+			review8.Text = reviews [7].quote;
+			review8.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[7].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness9 = FindViewById (Resource.Id.icon9) as ImageView;
 			if (reviews [8].freshness == "fresh")
 				freshness9.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness9.SetImageResource (Resource.Drawable.rotten);
+			TextView critic9 = FindViewById (Resource.Id.reviewer9) as TextView;
+			TextView review9 = FindViewById (Resource.Id.review9) as TextView;
+			critic9.Text = reviews [8].name;
+			review9.Text = reviews [8].quote;
+			review9.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[8].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			ImageView freshness10 = FindViewById (Resource.Id.icon10) as ImageView;
 			if (reviews [9].freshness == "fresh")
 				freshness10.SetImageResource (Resource.Drawable.fresh);
 			else
 				freshness10.SetImageResource (Resource.Drawable.rotten);
+			TextView critic10 = FindViewById (Resource.Id.reviewer10) as TextView;
+			TextView review10 = FindViewById (Resource.Id.review10) as TextView;
+			critic10.Text = reviews [9].name;
+			review10.Text = reviews [9].quote;
+			review10.Click += delegate {
+				var uri = Android.Net.Uri.Parse (reviews[9].links.review);
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 
-*/
+
 
 
 
@@ -353,15 +454,6 @@ namespace RottenTomatoes
 						genres[i] = string.Empty;
 						genres[i] += (string)objGenre.ToString();
 					}
-					//genres = (List<string>) jGenreObject.ToObject<List<string>>();
-					/*
-					for(int i = 0;i<jGenres.Count;i++)
-					{
-						JObject jGenre = (JObject)jGenres[i];
-						genres.Add(string.Empty);
-						
-					}
-					*/
 
 					
 					//set the values for movies from the json 
@@ -486,11 +578,11 @@ namespace RottenTomatoes
 						//change the data for movies at the index
 						reviews.Add (new Review ());
 						reviews[i].name = (string)mObject["critic"];
-						reviews[i].date = (DateTime)mObject["date"];
+						reviews[i].date = (DateTime)mObject["date"].ToObject<DateTime>();;
 						reviews[i].freshness = (string)mObject["freshness"];
 						reviews[i].publication = (string)mObject["publication"];
 						reviews[i].quote = (string)mObject["quote"];
-						reviews[i].links = (ReviewLink)mObject.ToObject<ReviewLink>();
+						reviews[i].links = (ReviewLink)mObject["links"].ToObject<ReviewLink>();
 
 					}
 				}

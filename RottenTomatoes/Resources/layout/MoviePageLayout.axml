@@ -419,7 +419,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout28">
                 <TextView
                     p1:text="Reviewer1"
@@ -453,7 +453,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout28">
                 <TextView
                     p1:text="Reviewer2"
@@ -487,7 +487,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout28">
                 <TextView
                     p1:text="Reviewer3"
@@ -521,7 +521,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
                     p1:text="Reviewer4"
@@ -555,7 +555,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
                     p1:text="Reviewer5"
@@ -589,7 +589,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
                     p1:text="Reviewer6"
@@ -623,7 +623,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
                     p1:text="Reviewer7"
@@ -657,7 +657,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
                     p1:text="Reviewer8"
@@ -691,7 +691,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
                     p1:text="Reviewer9"
@@ -725,7 +725,7 @@
                 p1:minWidth="25px"
                 p1:minHeight="25px"
                 p1:layout_width="wrap_content"
-                p1:layout_height="35dp"
+                p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
                     p1:text="Reviewer10"
