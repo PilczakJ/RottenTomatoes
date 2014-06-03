@@ -186,13 +186,11 @@
             p1:id="@+id/linearLayout7"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 1"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor1" />
             <TextView
-                p1:text="Characters 1"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -207,13 +205,11 @@
             p1:id="@+id/linearLayout8"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 2"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor2" />
             <TextView
-                p1:text="Characters 2"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -228,13 +224,11 @@
             p1:id="@+id/linearLayout9"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 3"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor3" />
             <TextView
-                p1:text="Characters 3"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -249,13 +243,11 @@
             p1:id="@+id/linearLayout10"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 4"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor4" />
             <TextView
-                p1:text="Characters 4"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -270,13 +262,11 @@
             p1:id="@+id/linearLayout11"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 5"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor5" />
             <TextView
-                p1:text="Characters 5"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -291,13 +281,11 @@
             p1:id="@+id/linearLayout12"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 6"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor6" />
             <TextView
-                p1:text="Characters 6"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -312,13 +300,11 @@
             p1:id="@+id/linearLayout13"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 7"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor7" />
             <TextView
-                p1:text="Characters 7"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -333,13 +319,11 @@
             p1:id="@+id/linearLayout14"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 8"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor8" />
             <TextView
-                p1:text="Characters 8"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -354,13 +338,11 @@
             p1:id="@+id/linearLayout15"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 9"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor9" />
             <TextView
-                p1:text="Characters 9"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -375,13 +357,11 @@
             p1:id="@+id/linearLayout16"
             p1:layout_marginBottom="5dp">
             <TextView
-                p1:text="Actor 10"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/actor10" />
             <TextView
-                p1:text="Characters 10"
                 p1:textAppearance="?android:attr/textAppearanceSmall"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -410,7 +390,6 @@
             p1:id="@+id/linearLayout18"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon1" />
@@ -422,13 +401,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout28">
                 <TextView
-                    p1:text="Reviewer1"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
                     p1:id="@+id/reviewer1" />
                 <TextView
-                    p1:text="Review1"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
@@ -444,7 +421,6 @@
             p1:id="@+id/linearLayout19"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon2" />
@@ -456,13 +432,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout28">
                 <TextView
-                    p1:text="Reviewer2"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
                     p1:id="@+id/reviewer2" />
                 <TextView
-                    p1:text="Review2"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
@@ -478,7 +452,6 @@
             p1:id="@+id/linearLayout20"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon3" />
@@ -490,13 +463,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout28">
                 <TextView
-                    p1:text="Reviewer3"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
                     p1:id="@+id/reviewer3" />
                 <TextView
-                    p1:text="Review3"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
@@ -512,7 +483,6 @@
             p1:id="@+id/linearLayout21"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:id="@+id/icon4"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp" />
@@ -524,13 +494,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
-                    p1:text="Reviewer4"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/reviewer4"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content" />
                 <TextView
-                    p1:text="Review4"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/review4"
                     p1:layout_width="match_parent"
@@ -546,7 +514,6 @@
             p1:id="@+id/linearLayout22"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon5" />
@@ -558,13 +525,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
-                    p1:text="Reviewer5"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/reviewer5"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content" />
                 <TextView
-                    p1:text="Review5"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/review5"
                     p1:layout_width="match_parent"
@@ -580,7 +545,6 @@
             p1:id="@+id/linearLayout23"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon6" />
@@ -592,13 +556,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
-                    p1:text="Reviewer6"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/reviewer6"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content" />
                 <TextView
-                    p1:text="Review6"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/review6"
                     p1:layout_width="match_parent"
@@ -614,7 +576,6 @@
             p1:id="@+id/linearLayout24"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon7" />
@@ -626,13 +587,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
-                    p1:text="Reviewer7"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/reviewer7"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content" />
                 <TextView
-                    p1:text="Review7"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/review7"
                     p1:layout_width="match_parent"
@@ -648,7 +607,6 @@
             p1:id="@+id/linearLayout25"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon8" />
@@ -660,13 +618,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
-                    p1:text="Reviewer8"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/reviewer8"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content" />
                 <TextView
-                    p1:text="Review8"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/review8"
                     p1:layout_width="match_parent"
@@ -682,7 +638,6 @@
             p1:id="@+id/linearLayout26"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon9" />
@@ -694,13 +649,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
-                    p1:text="Reviewer9"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/reviewer9"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content" />
                 <TextView
-                    p1:text="Review9"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/review9"
                     p1:layout_width="match_parent"
@@ -716,7 +669,6 @@
             p1:id="@+id/linearLayout27"
             p1:layout_marginBottom="10dp">
             <ImageView
-                p1:src="@android:drawable/ic_menu_gallery"
                 p1:layout_width="28dp"
                 p1:layout_height="28dp"
                 p1:id="@+id/icon10" />
@@ -728,13 +680,11 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout31">
                 <TextView
-                    p1:text="Reviewer10"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/reviewer10"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content" />
                 <TextView
-                    p1:text="Review10"
                     p1:textAppearance="?android:attr/textAppearanceSmall"
                     p1:id="@+id/review10"
                     p1:layout_width="match_parent"

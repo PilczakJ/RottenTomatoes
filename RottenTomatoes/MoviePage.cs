@@ -157,94 +157,104 @@ namespace RottenTomatoes
 				for (int i = 0; i < cast [0].characters.Length; i++)
 					characters1.Text += (cast [0].characters [i] + ", ");
 					
+			if (cast.Count > 1) {
+				TextView actor2 = FindViewById (Resource.Id.actor2) as TextView;
+				actor2.Text = cast [1].name;
 
-			TextView actor2 = FindViewById (Resource.Id.actor2) as TextView;
-			actor2.Text = cast [1].name;
-
-			TextView characters2 = FindViewById (Resource.Id.characters2) as TextView;
-			characters2.Text = "";
-			if(cast[1].characters.Length > 0)
-				for (int i = 0; i < cast [1].characters.Length; i++)
-					characters2.Text += (cast [1].characters [i] + ", ");
+				TextView characters2 = FindViewById (Resource.Id.characters2) as TextView;
+				characters2.Text = "";
+				if (cast [1].characters.Length > 0)
+					for (int i = 0; i < cast [1].characters.Length; i++)
+						characters2.Text += (cast [1].characters [i] + ", ");
+			}
 					
+			if (cast.Count > 2) {
+				TextView actor3 = FindViewById (Resource.Id.actor3) as TextView;
+				actor3.Text = cast [2].name;
 
-			TextView actor3 = FindViewById (Resource.Id.actor3) as TextView;
-			actor3.Text = cast [2].name;
-
-			TextView characters3 = FindViewById (Resource.Id.characters3) as TextView;
-			characters3.Text = "";
-			if(cast[2].characters.Length > 0)
-				for (int i = 0; i < cast [2].characters.Length; i++)
-					characters3.Text += (cast [2].characters [i] + ", ");
+				TextView characters3 = FindViewById (Resource.Id.characters3) as TextView;
+				characters3.Text = "";
+				if (cast [2].characters.Length > 0)
+					for (int i = 0; i < cast [2].characters.Length; i++)
+						characters3.Text += (cast [2].characters [i] + ", ");
+			}
 					
+			if (cast.Count > 3) {
+				TextView actor4 = FindViewById (Resource.Id.actor4) as TextView;
+				actor4.Text = cast [3].name;
 
-			TextView actor4 = FindViewById (Resource.Id.actor4) as TextView;
-			actor4.Text = cast [3].name;
+				TextView characters4 = FindViewById (Resource.Id.characters4) as TextView;
+				characters4.Text = "";
+				if (cast [3].characters.Length > 0)
+					for (int i = 0; i < cast [3].characters.Length; i++)
+						characters4.Text += (cast [3].characters [i] + ", ");
+			}
 
-			TextView characters4 = FindViewById (Resource.Id.characters4) as TextView;
-			characters4.Text = "";
-			if(cast[3].characters.Length > 0)
-				for (int i = 0; i < cast [3].characters.Length; i++)
-					characters4.Text += (cast [3].characters [i] + ", ");
+			if (cast.Count > 4) {
+				TextView actor5 = FindViewById (Resource.Id.actor5) as TextView;
+				actor5.Text = cast [4].name;
 
-			TextView actor5 = FindViewById (Resource.Id.actor5) as TextView;
-			actor5.Text = cast [4].name;
-
-			TextView characters5 = FindViewById (Resource.Id.characters5) as TextView;
-			characters5.Text = "";
-			if(cast[4].characters.Length > 0)
-				for (int i = 0; i < cast [4].characters.Length; i++)
-					characters5.Text += (cast [4].characters [i] + ", ");
+				TextView characters5 = FindViewById (Resource.Id.characters5) as TextView;
+				characters5.Text = "";
+				if (cast [4].characters.Length > 0)
+					for (int i = 0; i < cast [4].characters.Length; i++)
+						characters5.Text += (cast [4].characters [i] + ", ");
+			}
 					
+			if (cast.Count > 5) {
+				TextView actor6 = FindViewById (Resource.Id.actor6) as TextView;
+				actor6.Text = cast [5].name;
 
-			TextView actor6 = FindViewById (Resource.Id.actor6) as TextView;
-			actor6.Text = cast [5].name;
-
-			TextView characters6 = FindViewById (Resource.Id.characters6) as TextView;
-			characters6.Text = "";
-			if(cast[5].characters.Length > 0)
-				for (int i = 0; i < cast [0].characters.Length; i++)
-					characters6.Text += (cast [0].characters [i] + ", ");
+				TextView characters6 = FindViewById (Resource.Id.characters6) as TextView;
+				characters6.Text = "";
+				if (cast [5].characters.Length > 0)
+					for (int i = 0; i < cast [0].characters.Length; i++)
+						characters6.Text += (cast [0].characters [i] + ", ");
+			}
 					
+			if (cast.Count > 6) {
+				TextView actor7 = FindViewById (Resource.Id.actor7) as TextView;
+				actor7.Text = cast [6].name;
 
-			TextView actor7 = FindViewById (Resource.Id.actor7) as TextView;
-			actor7.Text = cast [6].name;
-
-			TextView characters7 = FindViewById (Resource.Id.characters7) as TextView;
-			characters7.Text = "";
-			if(cast[6].characters.Length > 0)
-				for (int i = 0; i < cast [6].characters.Length; i++)
-					characters7.Text += (cast [6].characters [i] + ", ");
+				TextView characters7 = FindViewById (Resource.Id.characters7) as TextView;
+				characters7.Text = "";
+				if (cast [6].characters.Length > 0)
+					for (int i = 0; i < cast [6].characters.Length; i++)
+						characters7.Text += (cast [6].characters [i] + ", ");
+			}
 					
+			if (cast.Count > 7) {
+				TextView actor8 = FindViewById (Resource.Id.actor8) as TextView;
+				actor8.Text = cast [7].name;
 
-			TextView actor8 = FindViewById (Resource.Id.actor8) as TextView;
-			actor8.Text = cast [7].name;
-
-			TextView characters8 = FindViewById (Resource.Id.characters8) as TextView;
-			characters8.Text = "";
-			if(cast[7].characters.Length > 0)
-				for (int i = 0; i < cast [7].characters.Length; i++)
-					characters8.Text += (cast [7].characters [i] + ", ");
+				TextView characters8 = FindViewById (Resource.Id.characters8) as TextView;
+				characters8.Text = "";
+				if (cast [7].characters.Length > 0)
+					for (int i = 0; i < cast [7].characters.Length; i++)
+						characters8.Text += (cast [7].characters [i] + ", ");
+			}
 					
+			if (cast.Count > 8) {
+				TextView actor9 = FindViewById (Resource.Id.actor9) as TextView;
+				actor9.Text = cast [8].name;
 
-			TextView actor9 = FindViewById (Resource.Id.actor9) as TextView;
-			actor9.Text = cast [8].name;
-
-			TextView characters9 = FindViewById (Resource.Id.characters9) as TextView;
-			characters9.Text = "";
-			if(cast[8].characters.Length > 0)
-				for (int i = 0; i < cast [8].characters.Length; i++)
-					characters9.Text += (cast [8].characters [i] + ", ");
+				TextView characters9 = FindViewById (Resource.Id.characters9) as TextView;
+				characters9.Text = "";
+				if (cast [8].characters.Length > 0)
+					for (int i = 0; i < cast [8].characters.Length; i++)
+						characters9.Text += (cast [8].characters [i] + ", ");
+			}
 					
+			if (cast.Count > 9) {
+				TextView actor10 = FindViewById (Resource.Id.actor10) as TextView;
+				actor10.Text = cast [9].name;
 
-			TextView actor10 = FindViewById (Resource.Id.actor10) as TextView;
-			actor10.Text = cast [9].name;
-
-			TextView characters10 = FindViewById (Resource.Id.characters10) as TextView;
-			characters10.Text = "";
-			if(cast[9].characters.Length > 0)
-				for (int i = 0; i < cast [9].characters.Length; i++)
-					characters10.Text += (cast [9].characters [i] + ", ");
+				TextView characters10 = FindViewById (Resource.Id.characters10) as TextView;
+				characters10.Text = "";
+				if (cast [9].characters.Length > 0)
+					for (int i = 0; i < cast [9].characters.Length; i++)
+						characters10.Text += (cast [9].characters [i] + ", ");
+			}
 					
 
 			//critic consensus
@@ -254,156 +264,172 @@ namespace RottenTomatoes
 			//make each review (freshness, critic, quote, and make link to the full review)
 
 			List<Review> reviews = getReviews ("http://api.rottentomatoes.com/api/public/v1.0/movies/" + id + "/reviews.json?review_type=top_critic&page_limit=20&page=1&country=us&apikey=p72922sy9n3a7e6ke8syyukx");
+			if (reviews.Count > 0) {
+				ImageView freshness1 = FindViewById (Resource.Id.icon1) as ImageView;
+				if (reviews [0].freshness == "fresh")
+					freshness1.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness1.SetImageResource (Resource.Drawable.rotten);
+				TextView critic1 = FindViewById (Resource.Id.reviewer1) as TextView;
+				TextView review1 = FindViewById (Resource.Id.review1) as TextView;
+				critic1.Text = reviews [0].name;
+				review1.Text = reviews [0].quote;
+				review1.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [0].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
 
-			ImageView freshness1 = FindViewById (Resource.Id.icon1) as ImageView;
-			if (reviews [0].freshness == "fresh")
-				freshness1.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness1.SetImageResource (Resource.Drawable.rotten);
-			TextView critic1 = FindViewById (Resource.Id.reviewer1) as TextView;
-			TextView review1 = FindViewById (Resource.Id.review1) as TextView;
-			critic1.Text = reviews [0].name;
-			review1.Text = reviews [0].quote;
-			review1.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[0].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
+			if (reviews.Count > 1) {
+				ImageView freshness2 = FindViewById (Resource.Id.icon2) as ImageView;
+				if (reviews [1].freshness == "fresh")
+					freshness2.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness2.SetImageResource (Resource.Drawable.rotten);
+				TextView critic2 = FindViewById (Resource.Id.reviewer2) as TextView;
+				TextView review2 = FindViewById (Resource.Id.review2) as TextView;
+				critic2.Text = reviews [1].name;
+				review2.Text = reviews [1].quote;
+				review2.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [1].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
 
-			ImageView freshness2 = FindViewById (Resource.Id.icon2) as ImageView;
-			if (reviews [1].freshness == "fresh")
-				freshness2.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness2.SetImageResource (Resource.Drawable.rotten);
-			TextView critic2 = FindViewById (Resource.Id.reviewer2) as TextView;
-			TextView review2 = FindViewById (Resource.Id.review2) as TextView;
-			critic2.Text = reviews [1].name;
-			review2.Text = reviews [1].quote;
-			review2.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[1].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
+			if (reviews.Count > 2) {
+				ImageView freshness3 = FindViewById (Resource.Id.icon3) as ImageView;
+				if (reviews [2].freshness == "fresh")
+					freshness3.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness3.SetImageResource (Resource.Drawable.rotten);
+				TextView critic3 = FindViewById (Resource.Id.reviewer3) as TextView;
+				TextView review3 = FindViewById (Resource.Id.review3) as TextView;
+				critic3.Text = reviews [2].name;
+				review3.Text = reviews [2].quote;
+				review3.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [2].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
 
-			ImageView freshness3 = FindViewById (Resource.Id.icon3) as ImageView;
-			if (reviews [2].freshness == "fresh")
-				freshness3.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness3.SetImageResource (Resource.Drawable.rotten);
-			TextView critic3 = FindViewById (Resource.Id.reviewer3) as TextView;
-			TextView review3 = FindViewById (Resource.Id.review3) as TextView;
-			critic3.Text = reviews [2].name;
-			review3.Text = reviews [2].quote;
-			review3.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[2].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
+			if (reviews.Count > 3) {
+				ImageView freshness4 = FindViewById (Resource.Id.icon4) as ImageView;
+				if (reviews [3].freshness == "fresh")
+					freshness4.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness4.SetImageResource (Resource.Drawable.rotten);
+				TextView critic4 = FindViewById (Resource.Id.reviewer4) as TextView;
+				TextView review4 = FindViewById (Resource.Id.review4) as TextView;
+				critic4.Text = reviews [3].name;
+				review4.Text = reviews [3].quote;
+				review4.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [3].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
+			if (reviews.Count > 4) {
+				ImageView freshness5 = FindViewById (Resource.Id.icon5) as ImageView;
+				if (reviews [4].freshness == "fresh")
+					freshness5.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness5.SetImageResource (Resource.Drawable.rotten);
+				TextView critic5 = FindViewById (Resource.Id.reviewer5) as TextView;
+				TextView review5 = FindViewById (Resource.Id.review5) as TextView;
+				critic5.Text = reviews [4].name;
+				review5.Text = reviews [4].quote;
+				review5.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [4].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
 
-			ImageView freshness4 = FindViewById (Resource.Id.icon4) as ImageView;
-			if (reviews [3].freshness == "fresh")
-				freshness4.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness4.SetImageResource (Resource.Drawable.rotten);
-			TextView critic4 = FindViewById (Resource.Id.reviewer4) as TextView;
-			TextView review4 = FindViewById (Resource.Id.review4) as TextView;
-			critic4.Text = reviews [3].name;
-			review4.Text = reviews [3].quote;
-			review4.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[3].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
+			if (reviews.Count > 5) {
+				ImageView freshness6 = FindViewById (Resource.Id.icon6) as ImageView;
+				if (reviews [5].freshness == "fresh")
+					freshness6.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness6.SetImageResource (Resource.Drawable.rotten);
+				TextView critic6 = FindViewById (Resource.Id.reviewer6) as TextView;
+				TextView review6 = FindViewById (Resource.Id.review6) as TextView;
+				critic6.Text = reviews [5].name;
+				review6.Text = reviews [5].quote;
+				review6.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [7].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
+			if (reviews.Count > 6) {
+				ImageView freshness7 = FindViewById (Resource.Id.icon7) as ImageView;
+				if (reviews [6].freshness == "fresh")
+					freshness7.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness7.SetImageResource (Resource.Drawable.rotten);
+				TextView critic7 = FindViewById (Resource.Id.reviewer7) as TextView;
+				TextView review7 = FindViewById (Resource.Id.review7) as TextView;
+				critic7.Text = reviews [6].name;
+				review7.Text = reviews [6].quote;
+				review7.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [6].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
 
-			ImageView freshness5 = FindViewById (Resource.Id.icon5) as ImageView;
-			if (reviews [4].freshness == "fresh")
-				freshness5.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness5.SetImageResource (Resource.Drawable.rotten);
-			TextView critic5 = FindViewById (Resource.Id.reviewer5) as TextView;
-			TextView review5 = FindViewById (Resource.Id.review5) as TextView;
-			critic5.Text = reviews [4].name;
-			review5.Text = reviews [4].quote;
-			review5.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[4].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
+			if (reviews.Count > 7) {
+				ImageView freshness8 = FindViewById (Resource.Id.icon8) as ImageView;
+				if (reviews [7].freshness == "fresh")
+					freshness8.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness8.SetImageResource (Resource.Drawable.rotten);
+				TextView critic8 = FindViewById (Resource.Id.reviewer8) as TextView;
+				TextView review8 = FindViewById (Resource.Id.review8) as TextView;
+				critic8.Text = reviews [7].name;
+				review8.Text = reviews [7].quote;
+				review8.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [7].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
+			if (reviews.Count > 8) {
+				ImageView freshness9 = FindViewById (Resource.Id.icon9) as ImageView;
+				if (reviews [8].freshness == "fresh")
+					freshness9.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness9.SetImageResource (Resource.Drawable.rotten);
+				TextView critic9 = FindViewById (Resource.Id.reviewer9) as TextView;
+				TextView review9 = FindViewById (Resource.Id.review9) as TextView;
+				critic9.Text = reviews [8].name;
+				review9.Text = reviews [8].quote;
+				review9.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [8].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
 
-			ImageView freshness6 = FindViewById (Resource.Id.icon6) as ImageView;
-			if (reviews [5].freshness == "fresh")
-				freshness6.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness6.SetImageResource (Resource.Drawable.rotten);
-			TextView critic6 = FindViewById (Resource.Id.reviewer6) as TextView;
-			TextView review6 = FindViewById (Resource.Id.review6) as TextView;
-			critic6.Text = reviews [5].name;
-			review6.Text = reviews [5].quote;
-			review6.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[7].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
-
-			ImageView freshness7 = FindViewById (Resource.Id.icon7) as ImageView;
-			if (reviews [6].freshness == "fresh")
-				freshness7.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness7.SetImageResource (Resource.Drawable.rotten);
-			TextView critic7 = FindViewById (Resource.Id.reviewer7) as TextView;
-			TextView review7 = FindViewById (Resource.Id.review7) as TextView;
-			critic7.Text = reviews [6].name;
-			review7.Text = reviews [6].quote;
-			review7.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[6].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
-
-			ImageView freshness8 = FindViewById (Resource.Id.icon8) as ImageView;
-			if (reviews [7].freshness == "fresh")
-				freshness8.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness8.SetImageResource (Resource.Drawable.rotten);
-			TextView critic8 = FindViewById (Resource.Id.reviewer8) as TextView;
-			TextView review8 = FindViewById (Resource.Id.review8) as TextView;
-			critic8.Text = reviews [7].name;
-			review8.Text = reviews [7].quote;
-			review8.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[7].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
-
-			ImageView freshness9 = FindViewById (Resource.Id.icon9) as ImageView;
-			if (reviews [8].freshness == "fresh")
-				freshness9.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness9.SetImageResource (Resource.Drawable.rotten);
-			TextView critic9 = FindViewById (Resource.Id.reviewer9) as TextView;
-			TextView review9 = FindViewById (Resource.Id.review9) as TextView;
-			critic9.Text = reviews [8].name;
-			review9.Text = reviews [8].quote;
-			review9.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[8].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
-
-			ImageView freshness10 = FindViewById (Resource.Id.icon10) as ImageView;
-			if (reviews [9].freshness == "fresh")
-				freshness10.SetImageResource (Resource.Drawable.fresh);
-			else
-				freshness10.SetImageResource (Resource.Drawable.rotten);
-			TextView critic10 = FindViewById (Resource.Id.reviewer10) as TextView;
-			TextView review10 = FindViewById (Resource.Id.review10) as TextView;
-			critic10.Text = reviews [9].name;
-			review10.Text = reviews [9].quote;
-			review10.Click += delegate {
-				var uri = Android.Net.Uri.Parse (reviews[9].links.review);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);     
-			};
+			if (reviews.Count > 9) {
+				ImageView freshness10 = FindViewById (Resource.Id.icon10) as ImageView;
+				if (reviews [9].freshness == "fresh")
+					freshness10.SetImageResource (Resource.Drawable.fresh);
+				else
+					freshness10.SetImageResource (Resource.Drawable.rotten);
+				TextView critic10 = FindViewById (Resource.Id.reviewer10) as TextView;
+				TextView review10 = FindViewById (Resource.Id.review10) as TextView;
+				critic10.Text = reviews [9].name;
+				review10.Text = reviews [9].quote;
+				review10.Click += delegate {
+					var uri = Android.Net.Uri.Parse (reviews [9].links.review);
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
+			}
 
 
 
