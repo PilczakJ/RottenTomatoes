@@ -72,77 +72,80 @@ namespace RottenTomatoes
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06002a
-			public const int actor1 = 2131099690;
+			// aapt resource value: 0x7f060026
+			public const int actor1 = 2131099686;
 			
-			// aapt resource value: 0x7f060043
-			public const int actor10 = 2131099715;
+			// aapt resource value: 0x7f06003f
+			public const int actor10 = 2131099711;
 			
-			// aapt resource value: 0x7f06002d
-			public const int actor2 = 2131099693;
+			// aapt resource value: 0x7f060029
+			public const int actor2 = 2131099689;
 			
-			// aapt resource value: 0x7f060030
-			public const int actor3 = 2131099696;
+			// aapt resource value: 0x7f06002c
+			public const int actor3 = 2131099692;
 			
-			// aapt resource value: 0x7f060033
-			public const int actor4 = 2131099699;
+			// aapt resource value: 0x7f06002f
+			public const int actor4 = 2131099695;
+			
+			// aapt resource value: 0x7f060032
+			public const int actor5 = 2131099698;
+			
+			// aapt resource value: 0x7f060034
+			public const int actor6 = 2131099700;
 			
 			// aapt resource value: 0x7f060036
-			public const int actor5 = 2131099702;
+			public const int actor7 = 2131099702;
 			
-			// aapt resource value: 0x7f060038
-			public const int actor6 = 2131099704;
+			// aapt resource value: 0x7f060039
+			public const int actor8 = 2131099705;
 			
-			// aapt resource value: 0x7f06003a
-			public const int actor7 = 2131099706;
-			
-			// aapt resource value: 0x7f06003d
-			public const int actor8 = 2131099709;
-			
-			// aapt resource value: 0x7f060040
-			public const int actor9 = 2131099712;
+			// aapt resource value: 0x7f06003c
+			public const int actor9 = 2131099708;
 			
 			// aapt resource value: 0x7f060007
 			public const int actors = 2131099655;
 			
-			// aapt resource value: 0x7f060028
-			public const int cast_label = 2131099688;
+			// aapt resource value: 0x7f060009
+			public const int caption = 2131099657;
 			
-			// aapt resource value: 0x7f06002b
-			public const int characters1 = 2131099691;
+			// aapt resource value: 0x7f060024
+			public const int cast_label = 2131099684;
 			
-			// aapt resource value: 0x7f060044
-			public const int characters10 = 2131099716;
+			// aapt resource value: 0x7f060027
+			public const int characters1 = 2131099687;
 			
-			// aapt resource value: 0x7f06002e
-			public const int characters2 = 2131099694;
+			// aapt resource value: 0x7f060040
+			public const int characters10 = 2131099712;
 			
-			// aapt resource value: 0x7f060031
-			public const int characters3 = 2131099697;
+			// aapt resource value: 0x7f06002a
+			public const int characters2 = 2131099690;
 			
-			// aapt resource value: 0x7f060034
-			public const int characters4 = 2131099700;
+			// aapt resource value: 0x7f06002d
+			public const int characters3 = 2131099693;
+			
+			// aapt resource value: 0x7f060030
+			public const int characters4 = 2131099696;
+			
+			// aapt resource value: 0x7f060033
+			public const int characters5 = 2131099699;
+			
+			// aapt resource value: 0x7f060035
+			public const int characters6 = 2131099701;
 			
 			// aapt resource value: 0x7f060037
-			public const int characters5 = 2131099703;
+			public const int characters7 = 2131099703;
 			
-			// aapt resource value: 0x7f060039
-			public const int characters6 = 2131099705;
+			// aapt resource value: 0x7f06003a
+			public const int characters8 = 2131099706;
 			
-			// aapt resource value: 0x7f06003b
-			public const int characters7 = 2131099707;
+			// aapt resource value: 0x7f06003d
+			public const int characters9 = 2131099709;
 			
-			// aapt resource value: 0x7f06003e
-			public const int characters8 = 2131099710;
+			// aapt resource value: 0x7f060042
+			public const int consensus = 2131099714;
 			
-			// aapt resource value: 0x7f060041
-			public const int characters9 = 2131099713;
-			
-			// aapt resource value: 0x7f060046
-			public const int consensus = 2131099718;
-			
-			// aapt resource value: 0x7f060023
-			public const int director = 2131099683;
+			// aapt resource value: 0x7f06001f
+			public const int director = 2131099679;
 			
 			// aapt resource value: 0x7f060006
 			public const int freshness = 2131099654;
@@ -150,56 +153,56 @@ namespace RottenTomatoes
 			// aapt resource value: 0x7f060005
 			public const int freshnessIcon = 2131099653;
 			
-			// aapt resource value: 0x7f060026
-			public const int genre = 2131099686;
+			// aapt resource value: 0x7f060022
+			public const int genre = 2131099682;
 			
-			// aapt resource value: 0x7f060048
-			public const int icon1 = 2131099720;
-			
-			// aapt resource value: 0x7f06006e
-			public const int icon10 = 2131099758;
-			
-			// aapt resource value: 0x7f06004d
-			public const int icon2 = 2131099725;
-			
-			// aapt resource value: 0x7f060051
-			public const int icon3 = 2131099729;
-			
-			// aapt resource value: 0x7f060055
-			public const int icon4 = 2131099733;
-			
-			// aapt resource value: 0x7f06005a
-			public const int icon5 = 2131099738;
-			
-			// aapt resource value: 0x7f06005e
-			public const int icon6 = 2131099742;
-			
-			// aapt resource value: 0x7f060062
-			public const int icon7 = 2131099746;
-			
-			// aapt resource value: 0x7f060066
-			public const int icon8 = 2131099750;
+			// aapt resource value: 0x7f060044
+			public const int icon1 = 2131099716;
 			
 			// aapt resource value: 0x7f06006a
-			public const int icon9 = 2131099754;
+			public const int icon10 = 2131099754;
 			
-			// aapt resource value: 0x7f060013
-			public const int imageView1 = 2131099667;
+			// aapt resource value: 0x7f060049
+			public const int icon2 = 2131099721;
 			
-			// aapt resource value: 0x7f060016
-			public const int imageView2 = 2131099670;
+			// aapt resource value: 0x7f06004d
+			public const int icon3 = 2131099725;
 			
-			// aapt resource value: 0x7f060019
-			public const int imageView3 = 2131099673;
+			// aapt resource value: 0x7f060051
+			public const int icon4 = 2131099729;
 			
-			// aapt resource value: 0x7f060009
-			public const int linearLayout1 = 2131099657;
+			// aapt resource value: 0x7f060056
+			public const int icon5 = 2131099734;
 			
-			// aapt resource value: 0x7f060032
-			public const int linearLayout10 = 2131099698;
+			// aapt resource value: 0x7f06005a
+			public const int icon6 = 2131099738;
 			
-			// aapt resource value: 0x7f060035
-			public const int linearLayout11 = 2131099701;
+			// aapt resource value: 0x7f06005e
+			public const int icon7 = 2131099742;
+			
+			// aapt resource value: 0x7f060062
+			public const int icon8 = 2131099746;
+			
+			// aapt resource value: 0x7f060066
+			public const int icon9 = 2131099750;
+			
+			// aapt resource value: 0x7f06000f
+			public const int imageView1 = 2131099663;
+			
+			// aapt resource value: 0x7f060012
+			public const int imageView2 = 2131099666;
+			
+			// aapt resource value: 0x7f060015
+			public const int imageView3 = 2131099669;
+			
+			// aapt resource value: 0x7f06000a
+			public const int linearLayout1 = 2131099658;
+			
+			// aapt resource value: 0x7f06002e
+			public const int linearLayout10 = 2131099694;
+			
+			// aapt resource value: 0x7f060031
+			public const int linearLayout11 = 2131099697;
 			
 			// aapt resource value: 0x7f060002
 			public const int linearLayout12 = 2131099650;
@@ -207,200 +210,185 @@ namespace RottenTomatoes
 			// aapt resource value: 0x7f060004
 			public const int linearLayout13 = 2131099652;
 			
-			// aapt resource value: 0x7f06003c
-			public const int linearLayout14 = 2131099708;
+			// aapt resource value: 0x7f060038
+			public const int linearLayout14 = 2131099704;
 			
-			// aapt resource value: 0x7f06003f
-			public const int linearLayout15 = 2131099711;
+			// aapt resource value: 0x7f06003b
+			public const int linearLayout15 = 2131099707;
 			
-			// aapt resource value: 0x7f060042
-			public const int linearLayout16 = 2131099714;
+			// aapt resource value: 0x7f06003e
+			public const int linearLayout16 = 2131099710;
 			
-			// aapt resource value: 0x7f060011
-			public const int linearLayout17 = 2131099665;
+			// aapt resource value: 0x7f06000d
+			public const int linearLayout17 = 2131099661;
 			
-			// aapt resource value: 0x7f060047
-			public const int linearLayout18 = 2131099719;
+			// aapt resource value: 0x7f060043
+			public const int linearLayout18 = 2131099715;
 			
-			// aapt resource value: 0x7f06004c
-			public const int linearLayout19 = 2131099724;
+			// aapt resource value: 0x7f060048
+			public const int linearLayout19 = 2131099720;
 			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout2 = 2131099648;
 			
-			// aapt resource value: 0x7f060050
-			public const int linearLayout20 = 2131099728;
+			// aapt resource value: 0x7f06004c
+			public const int linearLayout20 = 2131099724;
 			
-			// aapt resource value: 0x7f060054
-			public const int linearLayout21 = 2131099732;
+			// aapt resource value: 0x7f060050
+			public const int linearLayout21 = 2131099728;
+			
+			// aapt resource value: 0x7f060055
+			public const int linearLayout22 = 2131099733;
 			
 			// aapt resource value: 0x7f060059
-			public const int linearLayout22 = 2131099737;
+			public const int linearLayout23 = 2131099737;
 			
 			// aapt resource value: 0x7f06005d
-			public const int linearLayout23 = 2131099741;
+			public const int linearLayout24 = 2131099741;
 			
 			// aapt resource value: 0x7f060061
-			public const int linearLayout24 = 2131099745;
+			public const int linearLayout25 = 2131099745;
 			
 			// aapt resource value: 0x7f060065
-			public const int linearLayout25 = 2131099749;
+			public const int linearLayout26 = 2131099749;
 			
 			// aapt resource value: 0x7f060069
-			public const int linearLayout26 = 2131099753;
+			public const int linearLayout27 = 2131099753;
 			
-			// aapt resource value: 0x7f06006d
-			public const int linearLayout27 = 2131099757;
+			// aapt resource value: 0x7f060045
+			public const int linearLayout28 = 2131099717;
 			
-			// aapt resource value: 0x7f060049
-			public const int linearLayout28 = 2131099721;
+			// aapt resource value: 0x7f060010
+			public const int linearLayout3 = 2131099664;
+			
+			// aapt resource value: 0x7f060052
+			public const int linearLayout31 = 2131099730;
+			
+			// aapt resource value: 0x7f060011
+			public const int linearLayout4 = 2131099665;
 			
 			// aapt resource value: 0x7f060014
-			public const int linearLayout3 = 2131099668;
+			public const int linearLayout5 = 2131099668;
 			
-			// aapt resource value: 0x7f060056
-			public const int linearLayout31 = 2131099734;
+			// aapt resource value: 0x7f060017
+			public const int linearLayout6 = 2131099671;
 			
-			// aapt resource value: 0x7f060015
-			public const int linearLayout4 = 2131099669;
+			// aapt resource value: 0x7f060025
+			public const int linearLayout7 = 2131099685;
 			
-			// aapt resource value: 0x7f060018
-			public const int linearLayout5 = 2131099672;
+			// aapt resource value: 0x7f060028
+			public const int linearLayout8 = 2131099688;
 			
-			// aapt resource value: 0x7f06001b
-			public const int linearLayout6 = 2131099675;
-			
-			// aapt resource value: 0x7f060029
-			public const int linearLayout7 = 2131099689;
-			
-			// aapt resource value: 0x7f06002c
-			public const int linearLayout8 = 2131099692;
-			
-			// aapt resource value: 0x7f06002f
-			public const int linearLayout9 = 2131099695;
+			// aapt resource value: 0x7f06002b
+			public const int linearLayout9 = 2131099691;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listView1 = 2131099659;
 			
-			// aapt resource value: 0x7f06000d
-			public const int listView2 = 2131099661;
+			// aapt resource value: 0x7f06001d
+			public const int movie_info = 2131099677;
 			
-			// aapt resource value: 0x7f06000f
-			public const int listView3 = 2131099663;
-			
-			// aapt resource value: 0x7f060021
-			public const int movie_info = 2131099681;
-			
-			// aapt resource value: 0x7f060024
-			public const int mpaa_rating = 2131099684;
-			
-			// aapt resource value: 0x7f06000a
-			public const int opening = 2131099658;
+			// aapt resource value: 0x7f060020
+			public const int mpaa_rating = 2131099680;
 			
 			// aapt resource value: 0x7f060008
 			public const int ratingRuntime = 2131099656;
 			
-			// aapt resource value: 0x7f060027
-			public const int release_date = 2131099687;
+			// aapt resource value: 0x7f060023
+			public const int release_date = 2131099683;
 			
-			// aapt resource value: 0x7f06004b
-			public const int review1 = 2131099723;
-			
-			// aapt resource value: 0x7f060070
-			public const int review10 = 2131099760;
-			
-			// aapt resource value: 0x7f06004f
-			public const int review2 = 2131099727;
-			
-			// aapt resource value: 0x7f060053
-			public const int review3 = 2131099731;
-			
-			// aapt resource value: 0x7f060058
-			public const int review4 = 2131099736;
-			
-			// aapt resource value: 0x7f06005c
-			public const int review5 = 2131099740;
-			
-			// aapt resource value: 0x7f060060
-			public const int review6 = 2131099744;
-			
-			// aapt resource value: 0x7f060064
-			public const int review7 = 2131099748;
-			
-			// aapt resource value: 0x7f060068
-			public const int review8 = 2131099752;
+			// aapt resource value: 0x7f060047
+			public const int review1 = 2131099719;
 			
 			// aapt resource value: 0x7f06006c
-			public const int review9 = 2131099756;
+			public const int review10 = 2131099756;
 			
-			// aapt resource value: 0x7f06004a
-			public const int reviewer1 = 2131099722;
+			// aapt resource value: 0x7f06004b
+			public const int review2 = 2131099723;
 			
-			// aapt resource value: 0x7f06006f
-			public const int reviewer10 = 2131099759;
+			// aapt resource value: 0x7f06004f
+			public const int review3 = 2131099727;
 			
-			// aapt resource value: 0x7f06004e
-			public const int reviewer2 = 2131099726;
+			// aapt resource value: 0x7f060054
+			public const int review4 = 2131099732;
 			
-			// aapt resource value: 0x7f060052
-			public const int reviewer3 = 2131099730;
+			// aapt resource value: 0x7f060058
+			public const int review5 = 2131099736;
 			
-			// aapt resource value: 0x7f060057
-			public const int reviewer4 = 2131099735;
+			// aapt resource value: 0x7f06005c
+			public const int review6 = 2131099740;
 			
-			// aapt resource value: 0x7f06005b
-			public const int reviewer5 = 2131099739;
+			// aapt resource value: 0x7f060060
+			public const int review7 = 2131099744;
 			
-			// aapt resource value: 0x7f06005f
-			public const int reviewer6 = 2131099743;
+			// aapt resource value: 0x7f060064
+			public const int review8 = 2131099748;
 			
-			// aapt resource value: 0x7f060063
-			public const int reviewer7 = 2131099747;
+			// aapt resource value: 0x7f060068
+			public const int review9 = 2131099752;
 			
-			// aapt resource value: 0x7f060067
-			public const int reviewer8 = 2131099751;
+			// aapt resource value: 0x7f060046
+			public const int reviewer1 = 2131099718;
 			
 			// aapt resource value: 0x7f06006b
-			public const int reviewer9 = 2131099755;
+			public const int reviewer10 = 2131099755;
 			
-			// aapt resource value: 0x7f060045
-			public const int reviews = 2131099717;
+			// aapt resource value: 0x7f06004a
+			public const int reviewer2 = 2131099722;
 			
-			// aapt resource value: 0x7f060025
-			public const int runtime = 2131099685;
+			// aapt resource value: 0x7f06004e
+			public const int reviewer3 = 2131099726;
 			
-			// aapt resource value: 0x7f060010
-			public const int scrollView1 = 2131099664;
+			// aapt resource value: 0x7f060053
+			public const int reviewer4 = 2131099731;
 			
-			// aapt resource value: 0x7f060022
-			public const int synopsis = 2131099682;
+			// aapt resource value: 0x7f060057
+			public const int reviewer5 = 2131099735;
+			
+			// aapt resource value: 0x7f06005b
+			public const int reviewer6 = 2131099739;
+			
+			// aapt resource value: 0x7f06005f
+			public const int reviewer7 = 2131099743;
+			
+			// aapt resource value: 0x7f060063
+			public const int reviewer8 = 2131099747;
+			
+			// aapt resource value: 0x7f060067
+			public const int reviewer9 = 2131099751;
+			
+			// aapt resource value: 0x7f060041
+			public const int reviews = 2131099713;
+			
+			// aapt resource value: 0x7f060021
+			public const int runtime = 2131099681;
 			
 			// aapt resource value: 0x7f06000c
-			public const int textView1 = 2131099660;
-			
-			// aapt resource value: 0x7f06000e
-			public const int textView16 = 2131099662;
-			
-			// aapt resource value: 0x7f060017
-			public const int textView2 = 2131099671;
-			
-			// aapt resource value: 0x7f06001a
-			public const int textView3 = 2131099674;
-			
-			// aapt resource value: 0x7f06001c
-			public const int textView4 = 2131099676;
-			
-			// aapt resource value: 0x7f06001d
-			public const int textView5 = 2131099677;
+			public const int scrollView1 = 2131099660;
 			
 			// aapt resource value: 0x7f06001e
-			public const int textView6 = 2131099678;
+			public const int synopsis = 2131099678;
 			
-			// aapt resource value: 0x7f06001f
-			public const int textView7 = 2131099679;
+			// aapt resource value: 0x7f060013
+			public const int textView2 = 2131099667;
 			
-			// aapt resource value: 0x7f060020
-			public const int textView8 = 2131099680;
+			// aapt resource value: 0x7f060016
+			public const int textView3 = 2131099670;
+			
+			// aapt resource value: 0x7f060018
+			public const int textView4 = 2131099672;
+			
+			// aapt resource value: 0x7f060019
+			public const int textView5 = 2131099673;
+			
+			// aapt resource value: 0x7f06001a
+			public const int textView6 = 2131099674;
+			
+			// aapt resource value: 0x7f06001b
+			public const int textView7 = 2131099675;
+			
+			// aapt resource value: 0x7f06001c
+			public const int textView8 = 2131099676;
 			
 			// aapt resource value: 0x7f060001
 			public const int thumbnail = 2131099649;
@@ -408,8 +396,8 @@ namespace RottenTomatoes
 			// aapt resource value: 0x7f060003
 			public const int title = 2131099651;
 			
-			// aapt resource value: 0x7f060012
-			public const int title_bar = 2131099666;
+			// aapt resource value: 0x7f06000e
+			public const int title_bar = 2131099662;
 			
 			static Id()
 			{
@@ -428,10 +416,13 @@ namespace RottenTomatoes
 			public const int ListRow = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int ListSeparator = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int MoviePageLayout = 2130903042;
+			public const int Main = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int MoviePageLayout = 2130903043;
 			
 			static Layout()
 			{

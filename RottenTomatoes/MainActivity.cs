@@ -114,58 +114,58 @@ namespace RottenTomatoes
 			string url = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?page_limit=16&page=1&country=us&apikey=p72922sy9n3a7e6ke8syyukx";
 			string url2 = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?limit=2&country=us&apikey=p72922sy9n3a7e6ke8syyukx";
 			string url3 = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?page_limit=40&page=1&country=us&apikey=p72922sy9n3a7e6ke8syyukx";
+			//get movie data
 			List<Movies> boxOffice = getMovies(url);
 			List<Movies> opening = getMovies(url2);
 			List<Movies> inTheaters = getMovies(url3);
+			//make an instance of my adapter
+			HomeScreenAdapter adapter = new HomeScreenAdapter (this, Resource.Layout.ListRow, opening);
+			//make a sectioned adapter
+			SectionedListAdapter secAdapter = new SectionedListAdapter (this);
+			//add opening
+			secAdapter.AddSection ("Opening This Week", adapter);
+			adapter = new HomeScreenAdapter (this, Resource.Layout.ListRow, boxOffice);
+			//add top box office
+			secAdapter.AddSection ("Top Box Office", adapter);
+			//add also in theaters
+			adapter = new HomeScreenAdapter (this, Resource.Layout.ListRow, inTheaters);
+			secAdapter.AddSection ("Also In Theaters", adapter);
 
-			//make the lists using the custom list item layout
+			//set the list to the sectioned adapter
 			ListView openingList = FindViewById(Resource.Id.listView1) as ListView;
-			opening.AddRange (boxOffice);
-			opening.AddRange (inTheaters);
-			openingList.Adapter = new HomeScreenAdapter (this, opening);
+			openingList.Adapter = secAdapter;
 			setListViewHeightBasedOnChildren (openingList);
 
 			openingList.ItemClick += delegate(object sender, AdapterView.ItemClickEventArgs e) {
-				var activity2 = new Intent (this, typeof (MoviePage));
-				Movies item = (Movies)openingList.Adapter.GetItem(e.Position);
-				activity2.PutExtra("id",item.id);
-				activity2.PutExtra("title",item.Title);
-				activity2.PutExtra("mpaa_rating",item.mpaa_rating);
-				activity2.PutExtra("director",item.abridged_directors);
-				activity2.PutExtra("score",item.ratings.critics_score);
-				activity2.PutExtra("release_date_day",item.releasedate.theater.Day);
-				activity2.PutExtra("release_date_month",item.releasedate.theater.Month);
-				activity2.PutExtra("release_date_year",item.releasedate.theater.Year);
-				activity2.PutExtra("synopsis",item.synopsis);
-				activity2.PutExtra("runtime",item.runtime);
-				activity2.PutExtra("audience_score",item.ratings.audience_score);
-				activity2.PutExtra("reviews_url",item.links.reviews);
-				activity2.PutExtra("thumbnail_url",item.poster.thumbnail);
-				int numActors = item.abridged_cast.Length;
-				activity2.PutExtra("num_actors",numActors);
-				for(int i = 0;i<numActors;i++)
+				SectionedListAdapter adptr = (sender as ListView).Adapter as SectionedListAdapter;
+				if(adptr.GetItem(e.Position) != null)
 				{
-					activity2.PutExtra("actor"+i,item.abridged_cast[i].name);
-					activity2.PutExtra("characters"+i,item.abridged_cast[i].characters);
+					var activity2 = new Intent (this, typeof (MoviePage));
+					Movies item = (Movies)openingList.Adapter.GetItem(e.Position);
+					activity2.PutExtra("id",item.id);
+					activity2.PutExtra("title",item.Title);
+					activity2.PutExtra("mpaa_rating",item.mpaa_rating);
+					activity2.PutExtra("director",item.abridged_directors);
+					activity2.PutExtra("score",item.ratings.critics_score);
+					activity2.PutExtra("release_date_day",item.releasedate.theater.Day);
+					activity2.PutExtra("release_date_month",item.releasedate.theater.Month);
+					activity2.PutExtra("release_date_year",item.releasedate.theater.Year);
+					activity2.PutExtra("synopsis",item.synopsis);
+					activity2.PutExtra("runtime",item.runtime);
+					activity2.PutExtra("audience_score",item.ratings.audience_score);
+					activity2.PutExtra("reviews_url",item.links.reviews);
+					activity2.PutExtra("thumbnail_url",item.poster.thumbnail);
+					int numActors = item.abridged_cast.Length;
+					activity2.PutExtra("num_actors",numActors);
+					for(int i = 0;i<numActors;i++)
+					{
+						activity2.PutExtra("actor"+i,item.abridged_cast[i].name);
+						activity2.PutExtra("characters"+i,item.abridged_cast[i].characters);
+					}
+					activity2.PutExtra("critic_consensus",item.critics_consensus);
+					StartActivity(activity2);
 				}
-				activity2.PutExtra("critic_consensus",item.critics_consensus);
-				StartActivity(activity2);
-
-
-
-
-
-
 			};
-			/*
-			ListView boxOfficeList = FindViewById (Resource.Id.listView2) as ListView;
-			boxOfficeList.Adapter = new HomeScreenAdapter (this, boxOffice);
-			setListViewHeightBasedOnChildren (boxOfficeList);
-
-			ListView inTheatersList = FindViewById(Resource.Id.listView3) as ListView;
-			inTheatersList.Adapter = new HomeScreenAdapter (this, inTheaters);
-			setListViewHeightBasedOnChildren (inTheatersList);
-			*/
 
 		}
 			
@@ -278,13 +278,16 @@ namespace RottenTomatoes
 	/// Custom adapter for list items
 	/// </summary>
 	public class HomeScreenAdapter : BaseAdapter<Movies> {
-		public List<Movies> items{ get; set; }
+		public List<Movies> items;
 		Activity context;
-		public HomeScreenAdapter(Activity context, List<Movies> items)
+		int templateId;
+		public HomeScreenAdapter(Activity context,int template, List<Movies> items)
 			: base()
 		{
 			this.context = context;
 			this.items = items;
+			templateId = template;
+
 		}
 		public override long GetItemId(int position)
 		{
@@ -300,16 +303,12 @@ namespace RottenTomatoes
 			get { return items.Count; }
 		}
 
-		public override Java.Lang.Object GetItem (int position)
-		{
-			return items [position];
-		}
 		public override View GetView(int position, View convertView, ViewGroup parent)
 		{
 		
-			Movies item = items[position];
+			Movies item = this[position];
 			View view = convertView;
-			if (view == null) // no view to re-use, create new
+			if (view == null || !(view is LinearLayout)) // no view to re-use, create new
 				view = context.LayoutInflater.Inflate(Resource.Layout.ListRow, null);
 
 			//title
@@ -338,6 +337,8 @@ namespace RottenTomatoes
 			return view;
 		}
 
+
+
 		/// <summary>
 		/// Gets the image bitmap from URL.
 		/// </summary>
@@ -360,6 +361,115 @@ namespace RottenTomatoes
 		}
 	}
 
+	public class ListSection
+	{
+		private string _caption;
+		private BaseAdapter _adapter;
+
+		public ListSection(string caption, BaseAdapter adapter)
+		{
+			_caption = caption;
+			_adapter = adapter;
+		}
+
+		public string Caption{ get { return _caption; } set { _caption = value; } }
+		public BaseAdapter Adapter{ get { return _adapter; } set { _adapter = value; } }
+	}
+
+	public class SectionedListAdapter : BaseAdapter<ListSection>
+	{
+		private const int TYPE_SECTION_HEADER = 0;
+		private Context _context;
+		private LayoutInflater _inflater;
+		private List<ListSection> _sections; 
+		public SectionedListAdapter(Context context)
+		{
+			_context = context;
+			_inflater = LayoutInflater.From(_context);
+			_sections = new List<ListSection>();
+		}
+		public List<ListSection> Sections { get { return _sections; } set { _sections = value; } }
+
+		// Each section has x list items + 1 list item for the caption. This is the reason for the +1 in the tally
+		public override int Count
+		{
+			get
+			{
+				int count = 0;
+				foreach (ListSection s in _sections) count += s.Adapter.Count + 1;
+				return count;
+			}
+		}
+
+		// We know there will be at least 1 type, the seperator, plus each
+		// type for each section, that is why we start with 1
+		public override int ViewTypeCount
+		{
+			get
+			{
+				int viewTypeCount = 1;
+				foreach (ListSection s in _sections) viewTypeCount += s.Adapter.ViewTypeCount;
+				return viewTypeCount;
+			}
+		} 
+		public override ListSection this[int index] { get { return _sections[index]; } }
+		// Since we dont want the captions selectable or clickable returning a hard false here achieves this
+		public override bool AreAllItemsEnabled() { return false; } 
+		public override int GetItemViewType(int position)
+		{
+			int typeOffset = TYPE_SECTION_HEADER + 1;
+			foreach (ListSection s in _sections)
+			{
+				if (position == 0) return TYPE_SECTION_HEADER;
+				int size = s.Adapter.Count + 1;
+				if (position < size) return (typeOffset + s.Adapter.GetItemViewType(position - 1)); 
+				position -= size;
+				typeOffset += s.Adapter.ViewTypeCount;
+			}
+			return -1;
+		}
+		public override long GetItemId(int position) { return position; }
+		public void AddSection(String caption, BaseAdapter adapter)
+		{
+			_sections.Add(new ListSection(caption,adapter));
+		}
+		public override View GetView(int position, View convertView, ViewGroup parent)
+		{
+			View view = convertView;
+			foreach (ListSection s in _sections)
+			{
+				// postion == 0 means we have to inflate the section separator
+				if (position == 0) 
+				{
+					if (view == null || !(view is LinearLayout))
+					{
+						view = _inflater.Inflate(Resource.Layout.ListSeparator, parent, false);
+					}
+					TextView caption = view.FindViewById<TextView>(Resource.Id.caption);
+					caption.Text = s.Caption;
+					return view;
+
+				}
+				int size = s.Adapter.Count + 1;
+				// postion < size means we are at an item, so we just pass through its View from its adapter
+				if (position < size) return s.Adapter.GetView(position - 1, convertView, parent);
+				position -= size;
+			}
+			return null;
+		}
+
+		public override Java.Lang.Object GetItem(int position)
+		{
+			foreach (ListSection s in _sections)
+			{
+				if (position == 0) return null;
+				int size = s.Adapter.Count + 1;
+				if (position < size) return s.Adapter.GetItem(position - 1);
+				position -= size;
+			}
+			return null;
+		}
+	}
 
 }
 

@@ -68,6 +68,7 @@
     <AndroidResource Include="Resources\layout\ListRow.axml" />
     <AndroidResource Include="Resources\layout\MoviePageLayout.axml" />
     <AndroidResource Include="Resources\drawable\popcorn.png" />
+    <AndroidResource Include="Resources\layout\ListSeparator.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
