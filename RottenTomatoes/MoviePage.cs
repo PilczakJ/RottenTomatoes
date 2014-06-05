@@ -131,9 +131,9 @@ namespace RottenTomatoes
 			TextView genreText = FindViewById (Resource.Id.genre) as TextView;
 			genreText.Text = "Genre: ";
 
-			string[] genres = getGenres ("http://api.rottentomatoes.com/api/public/v1.0/movies/" + id + ".json?apikey=p72922sy9n3a7e6ke8syyukx");
-			if (genres.Length > 1)
-				for (int i = 0; i < genres.Length; i++)
+			List<string> genres = getGenres ("http://api.rottentomatoes.com/api/public/v1.0/movies/" + id + ".json?apikey=p72922sy9n3a7e6ke8syyukx");
+			if (genres.Count > 1)
+				for (int i = 0; i < genres.Count; i++)
 					genreText.Text += genres [i] + ", ";
 			else
 				genreText.Text += genres [0];
@@ -150,6 +150,12 @@ namespace RottenTomatoes
 			//actor list
 			TextView actor1 = FindViewById (Resource.Id.actor1) as TextView;
 			actor1.Text = cast [0].name;
+			actor1.SetTextColor (Color.Blue);
+			actor1.Click += delegate {
+				var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [0].name.Replace (" ", "_") + "/");
+				var intent = new Intent (Intent.ActionView, uri); 
+				StartActivity (intent);     
+			};
 
 			TextView characters1 = FindViewById (Resource.Id.characters1) as TextView;
 			characters1.Text = "";
@@ -160,6 +166,12 @@ namespace RottenTomatoes
 			if (cast.Count > 1) {
 				TextView actor2 = FindViewById (Resource.Id.actor2) as TextView;
 				actor2.Text = cast [1].name;
+				actor2.SetTextColor (Color.Blue);
+				actor2.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [1].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters2 = FindViewById (Resource.Id.characters2) as TextView;
 				characters2.Text = "";
@@ -171,6 +183,12 @@ namespace RottenTomatoes
 			if (cast.Count > 2) {
 				TextView actor3 = FindViewById (Resource.Id.actor3) as TextView;
 				actor3.Text = cast [2].name;
+				actor3.SetTextColor (Color.Blue);
+				actor3.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [2].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters3 = FindViewById (Resource.Id.characters3) as TextView;
 				characters3.Text = "";
@@ -182,6 +200,12 @@ namespace RottenTomatoes
 			if (cast.Count > 3) {
 				TextView actor4 = FindViewById (Resource.Id.actor4) as TextView;
 				actor4.Text = cast [3].name;
+				actor4.SetTextColor (Color.Blue);
+				actor4.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [3].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters4 = FindViewById (Resource.Id.characters4) as TextView;
 				characters4.Text = "";
@@ -193,6 +217,12 @@ namespace RottenTomatoes
 			if (cast.Count > 4) {
 				TextView actor5 = FindViewById (Resource.Id.actor5) as TextView;
 				actor5.Text = cast [4].name;
+				actor5.SetTextColor (Color.Blue);
+				actor5.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [4].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters5 = FindViewById (Resource.Id.characters5) as TextView;
 				characters5.Text = "";
@@ -204,6 +234,12 @@ namespace RottenTomatoes
 			if (cast.Count > 5) {
 				TextView actor6 = FindViewById (Resource.Id.actor6) as TextView;
 				actor6.Text = cast [5].name;
+				actor6.SetTextColor (Color.Blue);
+				actor6.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [5].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters6 = FindViewById (Resource.Id.characters6) as TextView;
 				characters6.Text = "";
@@ -215,6 +251,12 @@ namespace RottenTomatoes
 			if (cast.Count > 6) {
 				TextView actor7 = FindViewById (Resource.Id.actor7) as TextView;
 				actor7.Text = cast [6].name;
+				actor7.SetTextColor (Color.Blue);
+				actor7.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [6].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters7 = FindViewById (Resource.Id.characters7) as TextView;
 				characters7.Text = "";
@@ -226,6 +268,12 @@ namespace RottenTomatoes
 			if (cast.Count > 7) {
 				TextView actor8 = FindViewById (Resource.Id.actor8) as TextView;
 				actor8.Text = cast [7].name;
+				actor8.SetTextColor (Color.Blue);
+				actor8.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [7].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters8 = FindViewById (Resource.Id.characters8) as TextView;
 				characters8.Text = "";
@@ -237,6 +285,12 @@ namespace RottenTomatoes
 			if (cast.Count > 8) {
 				TextView actor9 = FindViewById (Resource.Id.actor9) as TextView;
 				actor9.Text = cast [8].name;
+				actor9.SetTextColor (Color.Blue);
+				actor9.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [8].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters9 = FindViewById (Resource.Id.characters9) as TextView;
 				characters9.Text = "";
@@ -248,6 +302,12 @@ namespace RottenTomatoes
 			if (cast.Count > 9) {
 				TextView actor10 = FindViewById (Resource.Id.actor10) as TextView;
 				actor10.Text = cast [9].name;
+				actor10.SetTextColor (Color.Blue);
+				actor10.Click += delegate {
+					var uri = Android.Net.Uri.Parse ("http://www.rottentomatoes.com/mobile/celebrity/" + cast [9].name.Replace (" ", "_") + "/");
+					var intent = new Intent (Intent.ActionView, uri); 
+					StartActivity (intent);     
+				};
 
 				TextView characters10 = FindViewById (Resource.Id.characters10) as TextView;
 				characters10.Text = "";
@@ -273,7 +333,7 @@ namespace RottenTomatoes
 				TextView critic1 = FindViewById (Resource.Id.reviewer1) as TextView;
 				TextView review1 = FindViewById (Resource.Id.review1) as TextView;
 				critic1.Text = reviews [0].name;
-				review1.Text = reviews [0].quote;
+				review1.Text = reviews [0].quote+"..";
 				review1.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [0].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -290,7 +350,7 @@ namespace RottenTomatoes
 				TextView critic2 = FindViewById (Resource.Id.reviewer2) as TextView;
 				TextView review2 = FindViewById (Resource.Id.review2) as TextView;
 				critic2.Text = reviews [1].name;
-				review2.Text = reviews [1].quote;
+				review2.Text = reviews [1].quote+"..";
 				review2.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [1].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -307,7 +367,7 @@ namespace RottenTomatoes
 				TextView critic3 = FindViewById (Resource.Id.reviewer3) as TextView;
 				TextView review3 = FindViewById (Resource.Id.review3) as TextView;
 				critic3.Text = reviews [2].name;
-				review3.Text = reviews [2].quote;
+				review3.Text = reviews [2].quote+"..";
 				review3.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [2].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -324,7 +384,7 @@ namespace RottenTomatoes
 				TextView critic4 = FindViewById (Resource.Id.reviewer4) as TextView;
 				TextView review4 = FindViewById (Resource.Id.review4) as TextView;
 				critic4.Text = reviews [3].name;
-				review4.Text = reviews [3].quote;
+				review4.Text = reviews [3].quote+"..";
 				review4.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [3].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -340,7 +400,7 @@ namespace RottenTomatoes
 				TextView critic5 = FindViewById (Resource.Id.reviewer5) as TextView;
 				TextView review5 = FindViewById (Resource.Id.review5) as TextView;
 				critic5.Text = reviews [4].name;
-				review5.Text = reviews [4].quote;
+				review5.Text = reviews [4].quote+"..";
 				review5.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [4].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -357,7 +417,7 @@ namespace RottenTomatoes
 				TextView critic6 = FindViewById (Resource.Id.reviewer6) as TextView;
 				TextView review6 = FindViewById (Resource.Id.review6) as TextView;
 				critic6.Text = reviews [5].name;
-				review6.Text = reviews [5].quote;
+				review6.Text = reviews [5].quote+"..";
 				review6.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [7].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -373,7 +433,7 @@ namespace RottenTomatoes
 				TextView critic7 = FindViewById (Resource.Id.reviewer7) as TextView;
 				TextView review7 = FindViewById (Resource.Id.review7) as TextView;
 				critic7.Text = reviews [6].name;
-				review7.Text = reviews [6].quote;
+				review7.Text = reviews [6].quote+"..";
 				review7.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [6].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -390,7 +450,7 @@ namespace RottenTomatoes
 				TextView critic8 = FindViewById (Resource.Id.reviewer8) as TextView;
 				TextView review8 = FindViewById (Resource.Id.review8) as TextView;
 				critic8.Text = reviews [7].name;
-				review8.Text = reviews [7].quote;
+				review8.Text = reviews [7].quote+"..";
 				review8.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [7].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -406,7 +466,7 @@ namespace RottenTomatoes
 				TextView critic9 = FindViewById (Resource.Id.reviewer9) as TextView;
 				TextView review9 = FindViewById (Resource.Id.review9) as TextView;
 				critic9.Text = reviews [8].name;
-				review9.Text = reviews [8].quote;
+				review9.Text = reviews [8].quote+"..";
 				review9.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [8].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
@@ -423,22 +483,13 @@ namespace RottenTomatoes
 				TextView critic10 = FindViewById (Resource.Id.reviewer10) as TextView;
 				TextView review10 = FindViewById (Resource.Id.review10) as TextView;
 				critic10.Text = reviews [9].name;
-				review10.Text = reviews [9].quote;
+				review10.Text = reviews [9].quote+"..";
 				review10.Click += delegate {
 					var uri = Android.Net.Uri.Parse (reviews [9].links.review);
 					var intent = new Intent (Intent.ActionView, uri); 
 					StartActivity (intent);     
 				};
 			}
-
-
-
-
-
-
-
-
-			// Create your application here
 
 		}
 
@@ -447,10 +498,10 @@ namespace RottenTomatoes
 		/// </summary>
 		/// <returns>The movies.</returns>
 		/// <param name="url">URL.</param>
-		public string[] getGenres(string url)
+		public List<string> getGenres(string url)
 		{
 			//make a list
-			string[] genres = new string[5];
+			List<string> genres = new List<string>();
 
 			//make a result string
 			string result = string.Empty;
@@ -473,12 +524,10 @@ namespace RottenTomatoes
 					JObject json = JObject.Parse (result);
 					//get the array of genres
 					JArray jGenres = (JArray)json["genres"];
-					genres = new string[jGenres.Count];
 					for(int i = 0;i<jGenres.Count;i++)
 					{
-						JObject objGenre = (JObject)jGenres[i];
-						genres[i] = string.Empty;
-						genres[i] += (string)objGenre.ToString();
+						genres.Add((string)jGenres[i]);
+
 					}
 
 					
