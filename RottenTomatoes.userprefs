@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RottenTomatoes\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="RottenTomatoes\MainActivity.cs" Line="422" Column="4" />
-      <File FileName="RottenTomatoes\MoviePage.cs" Line="149" Column="4" />
+      <File FileName="RottenTomatoes\MainActivity.cs" Line="135" Column="91" />
+      <File FileName="RottenTomatoes\MoviePage.cs" Line="304" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

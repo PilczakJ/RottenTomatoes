@@ -11,17 +11,17 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using RottenTomatoes_PCL;
 
 namespace RottenTomatoes
 {
-
-
 	public class ReleaseDates
 	{
 		public DateTime theater { get; set; }
 		public DateTime DVD { get; set; }
 
 	}
+    
 
 	public class Ratings
 	{
@@ -132,7 +132,28 @@ namespace RottenTomatoes
 			secAdapter.AddSection ("Also In Theaters", adapter);
 
 			//set the list to the sectioned adapter
-			ListView openingList = FindViewById(Resource.Id.listView1) as ListView;
+			var openingList = FindViewById<PullToRefresharp.Android.Widget.ListView > (Resource.Id.listView1);
+			openingList.RefreshActivated += delegate(object sender, EventArgs e) {
+
+				//get movie data
+				boxOffice = getMovies(url);
+				opening = getMovies(url2);
+				inTheaters = getMovies(url3);
+				//make an instance of my adapter
+				adapter = new HomeScreenAdapter (this, Resource.Layout.ListRow, opening);
+				//make a sectioned adapter
+				secAdapter = new SectionedListAdapter (this);
+				//add opening
+				secAdapter.AddSection ("Opening This Week", adapter);
+				adapter = new HomeScreenAdapter (this, Resource.Layout.ListRow, boxOffice);
+				//add top box office
+				secAdapter.AddSection ("Top Box Office", adapter);
+				//add also in theaters
+				adapter = new HomeScreenAdapter (this, Resource.Layout.ListRow, inTheaters);
+				secAdapter.AddSection ("Also In Theaters", adapter);
+				openingList.OnRefreshCompleted();
+			};
+			//ListView openingList = FindViewById(Resource.Id.listView1) as ListView;
 			openingList.Adapter = secAdapter;
 			setListViewHeightBasedOnChildren (openingList);
 
@@ -314,7 +335,10 @@ namespace RottenTomatoes
 			//title
 			view.FindViewById<TextView>(Resource.Id.title).Text = item.Title;
 			//first two actors
-			view.FindViewById<TextView>(Resource.Id.actors).Text = item.abridged_cast[0].name + ", " + item.abridged_cast[1].name;
+			if (item.abridged_cast.Length > 1)
+				view.FindViewById<TextView> (Resource.Id.actors).Text = item.abridged_cast [0].name + ", " + item.abridged_cast [1].name;
+			else if (item.abridged_cast.Length == 1)
+				view.FindViewById<TextView> (Resource.Id.actors).Text = item.abridged_cast [0].name;
 
 			//runtime in hours and minutes plus mpaa_rating
 			int hours = item.runtime / 60;
