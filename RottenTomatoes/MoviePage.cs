@@ -9,32 +9,46 @@ using Android.OS;
 using Android.Graphics;
 using System.Net;
 using System.IO;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using RottenTomatoes_PCL;
 
 namespace RottenTomatoes
 {
 	public class Review
 	{
+        [JsonProperty("critic")]
 		public string name{ get; set; }
+        [JsonProperty("date")]
 		public DateTime date { get; set; }
+        [JsonProperty("freshness")]
 		public string freshness {get;set;}
+        [JsonProperty("publication")]
 		public string publication {get;set;}
+        [JsonProperty("quote")]
 		public string quote {get;set;}
+        [JsonProperty("links")]
 		public ReviewLink links{ get; set; }
+        
 	}
-
+    
 	public class ReviewLink
 	{
+        [JsonProperty("review")]
 		public string review{ get; set; }
 	}
-
+    
 	public class FullCast
 	{
+        [JsonProperty("id")]
 		public string id { get; set; }
 
+        [JsonProperty("name")]
 		public string name { get; set; }
 
+        [JsonProperty("characters")]
 		public string[] characters { get; set; }
 	}
 
@@ -493,6 +507,36 @@ namespace RottenTomatoes
 
 		}
 
+        public static async Task<JObject> getGenreJson(string url)
+        {
+            var client = new Client<string[]>(url);
+            return await client.getResult();
+        }
+        public static List<string> makeGenreList(JObject json)
+        {
+            List<string> genres = new List<string>();
+            JArray jGenres = (JArray)json["genres"];
+            for (int i = 0; i < jGenres.Count; i++)
+            {
+                genres.Add((string)jGenres[i]);
+
+            }
+            return genres;
+        }
+        public List<string> getGenres(string url)
+        {
+            try
+            {
+                JObject obj = getGenreJson(url).Result;
+                return makeGenreList(obj);
+            }
+            catch
+            {
+                Console.WriteLine("invalid json");
+                return new List<string>();
+            }
+        }
+        /*
 		/// <summary>
 		/// Gets the genres
 		/// </summary>
@@ -539,8 +583,47 @@ namespace RottenTomatoes
 			return genres;
 
 		}
+         * */
+
+        public static async Task<JObject> getCastJson(string url)
+        {
+            var client = new Client<FullCast[]>(url);
+            return await client.getResult();
+        }
+
+        List<FullCast> makeCastList(JObject json)
+        {
+            List<FullCast> cast = new List<FullCast>();
+
+			JArray jCast = (JArray)json ["cast"];
 
 
+			for(int i = 0;i<jCast.Count;i++)
+			{
+				JObject cObject = (JObject) jCast[i];
+				cast.Add(new FullCast());
+				cast[i].id = (string)cObject["id"];
+				cast[i].name = (string)cObject["name"];
+				cast[i].characters = (string[]) cObject["characters"].ToObject<string[]>();
+			}
+            return cast;
+        }
+        public List<FullCast> getFullCast(string url)
+        {
+            try
+            {
+                JObject obj = getCastJson(url).Result;
+                return makeCastList(obj);
+            }
+            catch
+            {
+                Console.WriteLine("invalid json");
+                return new List<FullCast>();
+            }
+
+            
+        }
+        /*
 		/// <summary>
 		/// Gets the full cast
 		/// </summary>
@@ -591,6 +674,7 @@ namespace RottenTomatoes
 			return cast;
 
 		}
+         * */
 
 		/// <summary>
 		/// Gets the image bitmap from URL.
@@ -613,6 +697,53 @@ namespace RottenTomatoes
 			return imageBitmap;
 		}
 
+        public static async Task<JObject> getReviewJson(string url)
+        {
+            var client = new Client<Review[]>(url);
+            return await client.getResult();
+        }
+
+
+        List<Review> makeReviewList(JObject json)
+        {
+            List<Review> reviews = new List<Review>();
+
+            JArray jReviews = (JArray)json["reviews"];
+
+            //set the values for movies from the json 
+            for (int i = 0; i < jReviews.Count; i++)
+            {
+                //set mObject to the movie
+                JObject mObject = (JObject)jReviews[i];
+
+                //change the data for movies at the index
+                reviews.Add(new Review());
+                reviews[i].name = (string)mObject["critic"];
+                reviews[i].date = (DateTime)mObject["date"].ToObject<DateTime>(); ;
+                reviews[i].freshness = (string)mObject["freshness"];
+                reviews[i].publication = (string)mObject["publication"];
+                reviews[i].quote = (string)mObject["quote"];
+                reviews[i].links = (ReviewLink)mObject["links"].ToObject<ReviewLink>();
+
+            }
+            return reviews;
+        }
+        public List<Review> getReviews(string url)
+        {
+            try
+            {
+                JObject obj = getCastJson(url).Result;
+                return makeReviewList(obj);
+            }
+            catch
+            {
+                Console.WriteLine("invalid json");
+                return new List<Review>();
+            }
+
+
+        }
+        /*
 		/// <summary>
 		/// Gets the review data
 		/// </summary>
@@ -667,6 +798,7 @@ namespace RottenTomatoes
 			return reviews;
 
 		}
+         * */
 
 
 	}

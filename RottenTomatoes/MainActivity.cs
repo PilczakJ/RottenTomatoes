@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Graphics;
 using System.Net;
 using System.IO;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Linq;
 using RottenTomatoes_PCL;
@@ -17,6 +19,7 @@ namespace RottenTomatoes
 {
 	public class ReleaseDates
 	{
+        
 		public DateTime theater { get; set; }
 		public DateTime DVD { get; set; }
 
@@ -227,6 +230,59 @@ namespace RottenTomatoes
 			}
 		}
 
+        public static async Task<JObject> getMovieJson(string url)
+        {
+            var client = new Client<Movies[]>(url);
+			return await client.getResult();
+        }
+
+        List<Movies> makeMovieList(JObject json)
+        {
+            List<Movies> movies = new List<Movies>();
+            JArray jMovies = (JArray)json["movies"];
+
+            //for each movie
+            for (int i = 0; i < jMovies.Count; i++)
+            {
+                //set mObject to the movie
+                JObject mObject = (JObject)jMovies[i];
+
+                //change the data for movies at the index
+                movies.Add(new Movies());
+                movies[i].id = (string)mObject["id"];
+                movies[i].Title = (string)mObject["title"];
+                movies[i].Year = (int)mObject["year"];
+                movies[i].critics_consensus = (string)mObject["critics_consensus"];
+                movies[i].runtime = (int)mObject["runtime"];
+                movies[i].mpaa_rating = (string)mObject["mpaa_rating"];
+                movies[i].synopsis = (string)mObject["synopsis"];
+                movies[i].abridged_directors = (string)mObject["abridged_directors"];
+                movies[i].studio = (string)mObject["studio"];
+                movies[i].alternate_ids = (string)mObject["altenate_ids"];
+                movies[i].poster = (Posters)mObject["posters"].ToObject<Posters>();
+                movies[i].ratings = (Ratings)mObject["ratings"].ToObject<Ratings>();
+                movies[i].releasedate = (ReleaseDates)mObject["release_dates"].ToObject<ReleaseDates>();
+                movies[i].links = (MovieLinks)mObject["links"].ToObject<MovieLinks>();
+                movies[i].abridged_cast = (AbridgedCast[])mObject["abridged_cast"].ToObject<AbridgedCast[]>();
+
+
+            }
+            return movies;
+        }
+
+        public List<Movies> getMovies(string url)
+        {
+			try
+			{
+            	JObject obj = getMovieJson(url).Result;
+           		return makeMovieList(obj);
+			}
+			catch {
+				Console.WriteLine ("invalid json");
+				return new List<Movies> ();
+			}
+        }
+        /*
 		/// <summary>
 		/// Gets the movie data
 		/// </summary>
@@ -291,6 +347,7 @@ namespace RottenTomatoes
 			return movies;
 
 		}
+         * */
 
 			
 	}
